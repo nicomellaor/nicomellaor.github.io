@@ -17,13 +17,14 @@ body {
 header {
     background-color: var(--bar-color);
     margin: 0;
-    padding: 5px;
+    padding: 20px;
 }
 
 nav ul {
     display: flex;
     justify-content: flex-end;
     list-style-type: none;
+    margin: 0;
 }
 
 nav ul li {
@@ -44,11 +45,14 @@ h1 {
     color: var(--primary-color);
     font-size: 70px;
     text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 h2 {
     color: var(--secondary-color);
     font-size: 40px;
+    margin-bottom: 10px;
 }
 
 h3 {
@@ -65,20 +69,26 @@ article ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    display: flex;
-    justify-content: space-around;
 }
 
 article ul li {
     text-align: center;
 }
 
+article ul li p{
+    margin: 10px;
+}
+
 article ul li img {
     width: 100px;
+}
+
+.row{
+    margin: 0px;
 }
 
 footer {
     background-color: var(--bar-color);
     color: var(--font-color);
-    padding: 10px;
+    padding: 15px;
 }
