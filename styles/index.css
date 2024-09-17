@@ -3,6 +3,7 @@
     --primary-color: #FFB703;
     --secondary-color: #FB8500;
     --background-color: #0a1844;
+    --background-secondary: #1b2a5c;
     --font-color: #FFFFFF;
     --font-secondary-color: #8ECAE6;
     --bar-color: #202020;
@@ -20,6 +21,21 @@ header {
     padding: 20px;
 }
 
+.cuadro {
+    background-color: var(--background-secondary);
+}
+
+.mi-foto {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+p {
+    margin: 0;
+}
+
 nav ul {
     display: flex;
     justify-content: flex-end;
@@ -30,15 +46,6 @@ nav ul {
 nav ul li {
     margin-left: 10px;
     margin-right: 10px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: var(--font-color)
-}
-
-nav ul li a:hover{
-    color: var(--primary-color);
 }
 
 h1 {
@@ -52,11 +59,20 @@ h1 {
 h2 {
     color: var(--secondary-color);
     font-size: 40px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
-h3 {
+b {
     color: var(--font-secondary-color)
+}
+
+a {
+    text-decoration: none;
+    color: var(--font-color);
+}
+
+a:hover{
+    color: var(--primary-color);
 }
 
 section {

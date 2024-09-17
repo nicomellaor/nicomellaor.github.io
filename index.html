@@ -15,7 +15,8 @@
         <header>  
             <nav>
                 <ul>
-                    <li><a href="#presentación">Quién soy</a></li>
+                    <li><a href="#presentación">Presentación</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
                     <li><a href="#hobbies">Hobbies</a></li>
                     <li><a href="#conocimientos">Conocimientos</a></li>
                     <li><a href="#contacto">Contacto</a></li>
@@ -24,26 +25,38 @@
         </header>
         <main>
             <section id="presentación">
+                <h1>¡Bienvenidos!</h1>
                 <article>
-                    <h1>¡Bienvenidos!</h1>
                     <figure>
-                        <img width="200px" src="images/foto-personal.jpg" alt="Foto Personal">
+                        <img class="mi-foto" src="images/foto-personal.jpg" alt="Foto Personal">
                     </figure>
-                    <h2>Quién soy</h2>
-                    <h3>Nombre</h3>
-                    <p>Nicolás Alonso Mella Ortiz</p>
-                    <h3>Carrera</h3>
-                    <p>Ingeniería Civil Informática</p>
-                    <h3>Nivel</h3>
-                    <p>6to Semestre</p>
-                    <h3>Universidad</h3>
-                    <p>Universidad Autónoma de Chile</p>
-                    <h3>Fecha de nacimiento</h3>
-                    <p>12 de marzo de 2004</p>
+                    <div class="container">
+                        <h2>Quién soy</h2>
+                        <div class="row justify-content-center">
+                            <div class="cuadro col-12 col-md-6 p-5">
+                                <p>Mi nombre es <b>Nicolás Alonso Mella Ortiz</b> y estudio <b>Ingeniería Civil Informática</b> en la Universidad Autónoma de Chile. Actualmente me encuentro en 6to semestre y estoy aprendiendo sobre <b>Desarrollo de aplicaciones Web</b>, <b>Big Data</b>, <b>Bases de datos</b>, entre otros.</p>
+                            </div>
+                        </div>
+                    </div>
                 </article>
             </section>
+            <section id="proyectos">
+                <div class="container">
+                    <article>
+                        <h2>Proyectos</h2>
+                        <ul class="row">
+                            <li class="col-12 col-lg">
+                                <a href="https://nicomellaor.github.io/to-do/">
+                                    <img src="images/to-do-list.png">
+                                    <p>To-Do List</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </article>
+                </div>
+            </section>
             <section id="hobbies">
-                <div id="container">
+                <div class="container">
                     <article>
                         <h2>Hobbies y pasatiempos</h2>
                         <ul class="row">
@@ -64,7 +77,7 @@
                 </div>
             </section>
             <section id="conocimientos">
-                <div id="container">
+                <div class="container">
                     <article>
                         <h2>Conocimientos</h2>
                         <ul class="row">
@@ -78,15 +91,19 @@
                             </li>
                             <li class="col-12 col-lg">     
                                 <img src="images/sql-server.png">
-                                <p>Bases de datos SQL</p>
+                                <p>Bases de datos SQL y NoSQL</p>
                             </li>
                             <li class="col-12 col-lg"> 
                                 <img src="images/cisco.png">
-                                <p>Redes (básico)</p>
+                                <p>Redes</p>
                             </li>
                             <li class="col-12 col-lg">
                                 <img src="images/html-5.png">
-                                <p>HTML & CSS Básico</p>
+                                <p>HTML & CSS</p>
+                            </li>
+                            <li class="col-12 col-lg">
+                                <img src="images/js.png">
+                                <p>JavaScript</p>
                             </li>
                         </ul>
                     </article>
