@@ -1,11 +1,104 @@
 :root {
-    font-family: "Lato", sans-serif;
-    --primary-color: #FFB703;
-    --secondary-color: #FB8500;
-    --background-color: #0a1844;
-    --background-secondary: #1b2a5c;
+    --primary-color: #00B4D8;
+    --secondary-color: #113686;
+    --background-color: #03045E;
     --font-color: #FFFFFF;
-    --font-secondary-color: #8ECAE6;
-    --bar-color: #202020;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--background-color);
+    color: var(--font-color);
+}
+
+header {
+    /*position: fixed;
+    width: 100%;
+    padding: 40px 20px 20px 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;*/
+    background-color: var(--background-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+nav a{
+    font-size: 1.8rem;
+    color: var(--font-color);
+    margin-right: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+nav a:hover, nav a:active {
+    color: var(--primary-color);
+    border-bottom: 3px solid var(--primary-color);
+}
+
+/*section {
+    padding: 40px;
+}*/
+
+#sobre-mí {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+}
+
+.mi-foto {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+b {
+    color: var(--primary-color);
+}
+
+.cuadro {
+    width: 18rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    background-color: var(--secondary-color);
+    color: var(--font-color);
+    margin-bottom: 2rem;
+}
+
+.cuadro-img {
+    width: 286px;
+    height: 180px;
+    object-fit: cover;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    margin-bottom: 1.5rem;
+}

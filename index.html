@@ -10,139 +10,157 @@
         <link rel="stylesheet" href="styles/index.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header>  
-            <nav>
-                <ul>
-                    <li><a href="#sobre-mí">Sobre mí</a></li>
-                    <li><a href="#proyectos">Proyectos</a></li>
-                    <li><a href="#conocimientos">Conocimientos</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
-                </ul>
+        <header>
+            <nav class="navbar fixed-top justify-content-end">  
+                <a href="#sobre-mí">Sobre mí</a>
+                <a href="#proyectos">Proyectos</a>
+                <a href="#conocimientos">Conocimientos</a>
+                <a href="#contacto">Contacto</a>
             </nav>
         </header>
         <main>
-            <section id="sobre-mí">
-                <article>
-                    <figure>
+            <section id="sobre-mí" class="container">
+                <article class="row align-items-center justify-content-center">
+                    <figure class="col">
                         <img class="mi-foto" src="images/foto-personal.jpg" alt="Foto Personal">
                     </figure>
-                    <h1>Nicolás Mella Ortiz</h1>
-                    <h3>Estudiante de <b>Ingeniería Civil Informática</b></h3>
-                    <p> Actualmente estudio en la Universidad Autónoma de Chile y estoy aprendiendo sobre <b>Desarrollo de Aplicaciones Web</b> y <b>Móviles</b>, <b>Ciencia de Datos</b>, <b>Machine Learning</b>, entre otros.</p>
-                    <div>
-                        <a href="https://github.com/nicomellaor"><i class="bi bi-github"></i></a>
-                        <a href="https://cl.linkedin.com/in/nicol%C3%A1s-mella-ortiz-211921246"><i class="bi bi-linkedin"></i></a>
-                        <a href="mailto:nicolasmella2004@gmail.com"><i class="bi bi-envelope-fill"></i></a>
+                    <div class="col">
+                        <h1>Nicolás Mella Ortiz</h1>
+                        <h3>Estudiante de <b>Ingeniería Civil Informática</b></h3>
+                        <p> Actualmente estudio en la Universidad Autónoma de Chile y estoy aprendiendo sobre <b>Desarrollo de Aplicaciones Web</b>, <b>Big Data</b>, <b>Bases de datos</b>, entre otros.</p>
+                        <div>
+                            <a href="https://github.com/nicomellaor"><i class="bi bi-github"></i></a>
+                            <a href="https://cl.linkedin.com/in/nicol%C3%A1s-mella-ortiz-211921246"><i class="bi bi-linkedin"></i></a>
+                            <a href="mailto:nicolasmella2004@gmail.com"><i class="bi bi-envelope-fill"></i></a>
+                        </div>
                     </div>
                 </article>
             </section>
-            <section id="proyectos">
+            <section id="proyectos" class="container text-center">
                 <article>
                     <h2>Proyectos</h2>
-                    <div>
-                        <h5>To-Do List</h5>
-                        <p>Aplicación web para añadir, editar y completar tareas y recordatorios.</p>
-                        <div>
-                            <img src = "images/react-2.svg" alt="React" width="30px"/>
-                            <img src = "images/bootstrap-5-1.svg" alt="React" width="30px"/>
+                    <div class="row align-items-start justify-content-center">
+                        <div class="col-md-6" align="center">
+                            <div class="card cuadro">
+                                <img class="card-img-top cuadro-img" src="/images/to-do.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5>To-Do List</h5>
+                                    <p>Aplicación web para añadir, editar y completar tareas y recordatorios.</p>
+                                    <div class="mb-2">
+                                        <img src="images/react-2.svg" alt="React" width="30px"/>
+                                        <img src="images/bootstrap-5-1.svg" alt="Bootstrap" width="30px"/>
+                                    </div>
+                                    <div>
+                                        <a href="https://nicomellaor.github.io/to-do/"><i class="bi bi-globe2"></i></a>
+                                        <a href="https://github.com/nicomellaor/to-do"><i class="bi bi-github"></i></a>
+                                    </div> 
+                                </div>
+                            </div>
                         </div>
-                        <div>
-                            <a href="https://nicomellaor.github.io/to-do/"><i class="bi bi-globe2"></i></a>
-                            <a href="https://github.com/nicomellaor/to-do"><i class="bi bi-github"></i></a>
-                        </div> 
-                    </div>
-                    <div>
-                        <h5>Gestión de Empleados</h5>
-                        <p>Software que permite gestionar información sobre empleados (CRUD).</p>
-                        <div>
-                            <img src = "images/react-2.svg" alt="React" width="30px"/>
-                            <img src = "images/bootstrap-5-1.svg" alt="Bootstrap" width="30px"/>
-                            <img src = "images/laravel-2.svg" alt="Laravel" width="30px"/>
-                        </div>
-                        <div>
-                            <a href="https://nicomellaor.github.io/gestion-empleados/"><i class="bi bi-globe2"></i></a>
-                            <a href=https://github.com/nicomellaor/gestion-empleados><i class="bi bi-github"></i></a>
+                        <div class="col-md-6" align="center">
+                            <div class="card cuadro">
+                                <img class="card-img-top cuadro-img" src="/images/gestion-empleados.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5>Gestión de Empleados</h5>
+                                    <p>Software que permite gestionar información sobre empleados (CRUD).</p>
+                                    <div class="mb-2">
+                                        <img src = "images/react-2.svg" alt="React" width="30px"/>
+                                        <img src = "images/bootstrap-5-1.svg" alt="Bootstrap" width="30px"/>
+                                        <img src = "images/laravel-2.svg" alt="Laravel" width="30px"/>
+                                    </div>
+                                    <div>
+                                        <a href="https://nicomellaor.github.io/gestion-empleados/"><i class="bi bi-globe2"></i></a>
+                                        <a href=https://github.com/nicomellaor/gestion-empleados><i class="bi bi-github"></i></a>
+                                    </div>
+                                </div>  
+                            </div>
                         </div>
                     </div>
                 </article>
             </section>
-            <section id="conocimientos">
+            <section id="conocimientos" class="container text-center">
                 <article>
                     <h2>Conocimientos</h2>
                     <h3>Programación</h3>
-                    <ul>
-                        <li>
-                            <img src = "images/python-5.svg" alt="Python" width="100px"/>
+                    <ul class="row align-items-center justify-content-center">
+                        <li class="col-12 col-md">
+                            <img src = "images/python-5.svg" alt="Python"/>
                             <h5>Python</h5>
                         </li>
-                        <li>
-                            <img src = "images/html-1.svg" alt="HTML5" width="100px"/>
+                        <li class="col-12 col-md">
+                            <img src = "images/html-1.svg" alt="HTML5"/>
                             <h5>HTML</h5>
                         </li>
-                        <li>
-                            <img src = "images/css-3.svg" alt="CSS3" width="100px"/>
+                        <li class="col-12 col-md">
+                            <img src = "images/css-3.svg" alt="CSS3"/>
                             <h5>CSS</h5>
                         </li>
-                        <li>
-                            <img src = "images/logo-javascript.svg" alt="JavaScript" width="100px"/>
+                        <li class="col-12 col-md">
+                            <img src = "images/logo-javascript.svg" alt="JavaScript"/>
                             <h5>JavaScript</h5>
                         </li>
-                        <li>
-                            <img src = "images/java-14.svg" alt="Java" width="100px"/>
+                        <li class="col-12 col-md">
+                            <img src = "images/java-14.svg" alt="Java"/>
                             <h5>Java</h5>
                         </li>
                     </ul>
                     <h3>Frameworks y Librerías</h3>
-                    <ul>
-                        <li>
-                            <img src = "images/react-2.svg" alt="React" width="100px"/>
+                    <ul class="row align-items-center justify-content-center">
+                        <li class="col-12 col-md">
+                            <img src = "images/react-2.svg" alt="React"/>
                             <h5>React</h5>
                         </li>
-                        <li>
-                            <img src = "images/bootstrap-5-1.svg" alt="Bootstrap" width="100px"/>
+                        <li class="col-12 col-md">
+                            <img src = "images/bootstrap-5-1.svg" alt="Bootstrap"/>
                             <h5>Bootstrap</h5>
                         </li>
-                        <li>
-                            <img src = "images/laravel-2.svg" alt="Laravel" width="100px"/>
+                        <li class="col-12 col-md">
+                            <img src = "images/laravel-2.svg" alt="Laravel"/>
                             <h5>Laravel</h5>
                         </li>
                     </ul>
                     <h3>Bases de Datos</h3>
-                    <ul>
-                        <li>
-                            <img src = "images/mysql-logo-pure.svg" alt="MySQL" width="100px"/>
+                    <ul class="row align-items-center justify-content-center">
+                        <li class="col-12 col-md">
+                            <img src = "images/mysql-logo-pure.svg" alt="MySQL"/>
                             <h5>MySQL</h5>
                         </li>
-                        <li>
-                            <img src = "images/mongodb-icon-1.svg" alt="MongoDB" width="100px"/>
+                        <li class="col-12 col-md">
+                            <img src = "images/mongodb-icon-1.svg" alt="MongoDB"/>
                             <h5>MongoDB</h5>
                         </li>
-                        <li>
-                            <img src = "images/neo4j-original-wordmark.svg" alt="Neo4j" width="100px"/>
+                        <li class="col-12 col-md">
+                            <img src = "images/neo4j-original-wordmark.svg" alt="Neo4j"/>
                             <h5>Neo4j</h5>
                         </li>
                     </ul>
                 </article>
             </section>
         </main>
-        <footer id="contacto">
+        <footer id="contacto" class="container">
             <article>
                 <h2>Contacto</h2>
                 <p>Si deseas contactarme, puedes hacerlo a través de mis redes sociales o enviándome un correo electrónico.</p>
-                <div>
-                    <a href="https://github.com/nicomellaor"><i class="bi bi-github"></i></a>
-                    <h5>GitHub</h5>
-                    <p>nicomellaor</p>
-                    <a href="https://cl.linkedin.com/in/nicol%C3%A1s-mella-ortiz-211921246"><i class="bi bi-linkedin"></i></a>
-                    <h5>LinkedIn</h5>
-                    <p>Nicolás Mella Ortiz</p>
-                    <a href="mailto:nicolasmella2004@gmail.com"><i class="bi bi-envelope-fill"></i></a>
-                    <h5>Gmail</h5>
-                    <p>nicolasmella2004@gmail.com</p>
-                </div>
+                <ul class="row align-items-center justify-content-center">
+                    <li class="col-md">
+                        <a href="https://github.com/nicomellaor"><i class="bi bi-github"></i></a>
+                        <h5>GitHub</h5>
+                        <p>nicomellaor</p>
+                    </li>
+                    <li class="col-md">
+                        <a href="https://cl.linkedin.com/in/nicol%C3%A1s-mella-ortiz-211921246"><i class="bi bi-linkedin"></i></a>
+                        <h5>LinkedIn</h5>
+                        <p>Nicolás Mella Ortiz</p>
+                    </li>
+                    <li class="col-md">
+                        <a href="mailto:nicolasmella2004@gmail.com"><i class="bi bi-envelope-fill"></i></a>
+                        <h5>Gmail</h5>
+                        <p>nicolasmella2004@gmail.com</p>
+                    </li>
+                </ul>
             </article>
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
