@@ -35,6 +35,7 @@ main {
 
 a {
     text-decoration: none;
+    display: inline-flex;
 }
 
 nav a{
@@ -42,7 +43,6 @@ nav a{
     color: var(--font-color);
     margin-right: 4rem;
     font-weight: 500;
-    border-bottom: 3px solid transparent;
     text-decoration: none;
 }
 
@@ -100,4 +100,23 @@ ul li img {
 
 h2 {
     margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+h3 {
+    font-weight: 300;
+}
+
+.bi {
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+    color: white;
+}
+
+a i:hover {
+    color: var(--primary-color);
+}
+
+#contacto h5 {
+    margin: 0;
 }
