@@ -109,8 +109,11 @@ h3 {
 
 .bi {
     font-size: 1.5rem;
-    margin: 0 0.5rem;
     color: white;
+}
+
+.iconos {
+    margin: 0 0.5rem;
 }
 
 a i:hover {
