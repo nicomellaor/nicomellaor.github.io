@@ -60,18 +60,18 @@ footer {
     padding-bottom: 90px;
 }
 
-.mi-foto {
+.my-photo {
     width: 500px;
     height: 500px;
     object-fit: cover;
     border-radius: 50%;
 }
 
-b {
+strong {
     color: var(--primary-color);
 }
 
-.cuadro {
+.box {
     width: 18rem;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     text-align: center;
@@ -80,7 +80,7 @@ b {
     margin-bottom: 2rem;
 }
 
-.cuadro-img {
+.box-img {
     width: 286px;
     height: 180px;
     object-fit: cover;
@@ -112,7 +112,7 @@ h3 {
     color: white;
 }
 
-.iconos {
+.my-icons {
     margin: 0 0.5rem;
 }
 
@@ -120,6 +120,6 @@ a i:hover {
     color: var(--primary-color);
 }
 
-#contacto h5 {
+#contact h5 {
     margin: 0;
 }
