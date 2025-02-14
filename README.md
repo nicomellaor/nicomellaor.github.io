@@ -1,8 +1,8 @@
-# Portafolio
+# Portfolio
 
-Página web de presentación personal hecha con Bootstrap, HTML & CSS.
+Presentation website made with Bootstrap, HTML & CSS.
 
-Se incluyen proyectos de software, conocimientos sobre distintas tecnologías e información de contacto.
+Includes software projects, knowledge about different technologies and contact information.
 
-## Link
-- https://nicomellaor.github.io/presentacion/
+## URL
+- https://nicomellaor.github.io/
