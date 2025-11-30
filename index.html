@@ -1,185 +1,188 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Nicolás Mella</title>
-        <meta charset="utf-8"/>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-        <meta property="og:image" content="images/foto-personal.jpg"/>
-        <meta property="og:description" content="I'm Nicolás Mella, a Computer Engineering Student and this is my personal presentation website."/>
-        <link rel="stylesheet" href="styles/index.css" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <header>
-            <nav class="navbar fixed-top justify-content-end custom-navbar">  
-                <a href="#about-me">About me</a>
-                <a href="#projects">Projects</a>
-                <a href="#skills">Skills</a>
-                <a href="#contact">Contact</a>
-            </nav>
-        </header>
-        <main>
-            <section id="about-me" class="container">
-                <article class="row align-items-center justify-content-center">
-                    <figure class="col-xl-6 w-auto">
-                        <img class="my-photo" src="images/foto-personal.jpg" alt="Personal Photo">
-                    </figure>
-                    <div class="col-xl-6">
-                        <h1>Nicolás Mella Ortiz</h1>
-                        <h3><strong>Computer Engineering</strong> Student</h3>
-                        <p class="my-5"> I'm currently studying at the Autonomous University of Chile and I'm learning about <strong>Web Development</strong>, <strong>Big Data</strong>, <strong>Databases</strong> and other.</p>
-                        <div>
-                            <a href="https://github.com/nicomellaor" target="_blank" class="my-icons" title="GitHub"><i class="bi bi-github"></i></a>
-                            <a href="https://www.linkedin.com/in/nicolas-mella-ortiz/" target="_blank" class="my-icons" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
-                            <a href="mailto:nicolasmella2004@gmail.com" target="_blank" class="my-icons" title="Gmail"><i class="bi bi-envelope-fill"></i></a>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nicolás Mella</title>
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="bg-bg text-text font-inter">
+
+    <!-- Contenedor principal -->
+    <main class="max-w-3xl mx-auto px-6 py-12">
+
+        <!-- Header -->
+        <section class="flex flex-col sm:flex-row items-center sm:items-start gap-6 mb-12">
+            <img src="images/avatar.jpg" alt="Foto de perfil"
+                 class="w-36 h-36 rounded-full object-cover border-2 border-accent shadow-lg">
+
+            <div>
+                <h1 class="text-3xl font-semibold">Nicolás Mella</h1>
+                <p class="text-muted mt-1">Ingeniero Civil Informático</p>
+
+                <!-- Icon Buttons -->
+                <div class="flex gap-3 mt-4">
+                    <a href="mailto:nicolasmella2004@gmail.com" class="email-btn">
+                        <i class="bi bi-envelope-fill mr-2"></i> nicolasmella2004@gmail</a>
+
+                    <a href="docs/CV.pdf" download target="_blank" 
+                        class="icon-btn"><i class="bi bi-file-earmark-text-fill"></i></a>
+
+                    <a href="https://github.com/nicomellaor" target="_blank"
+                       class="icon-btn"><i class="bi bi-github"></i></a>
+
+                    <a href="https://www.linkedin.com/in/nicolas-mella-ortiz/" target="_blank"
+                       class="icon-btn"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <hr class="divider mb-10">
+
+        <!-- Sobre mí -->
+        <section class="mb-12">
+            <h2 class="section-title">Sobre mí</h2>
+            <p class="text-muted leading-relaxed mt-2">
+                Soy un estudiante apasionado por el desarrollo de software. 
+                Actualmente me encuentro aprendiendo sobre desarrollo web, aplicaciones móviles y ciencia de datos, 
+                con el objetivo de construir soluciones modernas y funcionales.
+            </p>
+        </section>
+
+        <hr class="divider mb-10">
+
+        <!-- Tecnologías -->
+        <section class="mb-12">
+            <h2 class="section-title">Tecnologías</h2>
+
+            <div class="flex flex-wrap gap-2 mt-3">
+                <span class="chip">Python</span>
+                <span class="chip">JavaScript</span>
+                <span class="chip">TypeScript</span>
+                <span class="chip">React</span>
+                <span class="chip">FastAPI</span>
+                <span class="chip">Django</span>
+            </div>
+        </section>
+
+        <hr class="divider mb-10">
+
+        <!-- Experiencia -->
+        <!--
+        <section class="mb-12">
+            <h2 class="section-title">Experiencia</h2>
+
+            <div class="mt-4 space-y-6">
+
+                <div class="relative pl-10">
+                    <div class="icon-circle"><i class="bi bi-terminal"></i></div>
+                    <h3 class="font-medium">Empresa X</h3>
+                    <p class="text-muted text-sm">Práctica Profesional</p>
+                    <span class="tag-date">Dic. 2025 - Feb. 2026</span>
+                </div>
+
+                <div class="relative pl-10">
+                    <div class="icon-circle"><i class="bi bi-cpu"></i></div>
+                    <h3 class="font-medium">Universidad Autónoma de Chile</h3>
+                    <p class="text-muted text-sm">Desarrollador Independiente</p>
+                    <span class="tag-date">Ag. 2025 - Nov. 2025</span>
+                </div>
+
+            </div>
+        </section>
+
+        <hr class="divider mb-10">
+        -->
+
+        <!-- Proyectos -->
+        <section class="mb-14">
+            <h2 class="section-title">Proyectos</h2>
+
+            <!-- Card -->
+            <div class="project-card mt-6">
+                <div class="flex flex-col md:flex-row items-center gap-6">
+                    <div class="flex-1">
+                        <h3 class="font-medium text-lg">Proyecto de Asistencia SAAC-ZERO</h3>
+                        <p class="text-muted mt-2">
+                            Plataforma para automatizar el registro de asistencia de las tutorías y ayudantías SAAC 
+                            dentro de la Universidad Autónoma de Chile.
+                        </p>
+
+                        <div class="flex gap-2 mt-3">
+                            <span class="chip">React</span>
+                            <span class="chip">Tailwind</span>
+                            <span class="chip">FastAPI</span>
+                            <span class="chip">PostgreSQL</span>
                         </div>
                     </div>
-                </article>
-            </section>
-            <section id="projects" class="container text-center">
-                <article>
-                    <h2>Projects</h2>
-                    <div class="row align-items-start justify-content-center">
-                        <div class="col-12 col-md" align="center">
-                            <div class="card box">
-                                <img class="card-img-top box-img" src="images/to-do.png" alt="Card image cap">
-                                <div class="card-body">
-                                    <h5>To-Do List</h5>
-                                    <p>Application to manage and simplify tasks.</p>
-                                    <div class="mb-2">
-                                        <img src="images/react-2.svg" alt="React" title="React" class="my-icons" width="30px"/>
-                                        <img src="images/bootstrap-5-1.svg" alt="Bootstrap" title="Bootstrap" class="my-icons" width="30px"/>
-                                    </div>
-                                    <div>
-                                        <a href="https://nicomellaor.github.io/to-do/" target="_blank" class="my-icons" title="Website"><i class="bi bi-globe2"></i></a>
-                                        <a href="https://github.com/nicomellaor/to-do" target="_blank" class="my-icons" title="Repository"><i class="bi bi-github"></i></a>
-                                    </div> 
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md" align="center">
-                            <div class="card box">
-                                <img class="card-img-top box-img" src="images/gestion-empleados.png" alt="Card image cap">
-                                <div class="card-body">
-                                    <h5>Employee Management</h5>
-                                    <p>Software to manage employee information (CRUD).</p>
-                                    <div class="mb-2">
-                                        <img src = "images/react-2.svg" alt="React" title="React" class="my-icons" width="30px"/>
-                                        <img src = "images/bootstrap-5-1.svg" alt="Bootstrap" title="Bootstrap" class="my-icons" width="30px"/>
-                                        <img src = "images/laravel-2.svg" alt="Laravel" title="Laravel" class="my-icons" width="30px"/>
-                                    </div>
-                                    <div>
-                                        <a href="https://nicomellaor.github.io/gestion-empleados/" target="_blank" class="my-icons" title="Website"><i class="bi bi-globe2"></i></a>
-                                        <a href="https://github.com/nicomellaor/gestion-empleados" target="_blank" class="my-icons" title="Repository"><i class="bi bi-github"></i></a>
-                                    </div>
-                                </div>  
-                            </div>
-                        </div>
-                        <div class="col-12 col-md" align="center">
-                            <div class="card box">
-                                <img class="card-img-top box-img" src="images/data-analysis.png" alt="Card image cap">
-                                <div class="card-body">
-                                    <h5>Data Analysis App</h5>
-                                    <p>Data Analysis Application using Pandas, Matplotlib & Streamlit.</p>
-                                    <div class="mb-2">
-                                        <img src = "images/python-5.svg" alt="Python" title="Python" class="my-icons" width="30px"/>
-                                    </div>
-                                    <div>
-                                        <a href="https://nicomellaor-data-analysis-pandas-main-myauuy.streamlit.app/" target="_blank" class="my-icons" title="Website"><i class="bi bi-globe2"></i></a>
-                                        <a href="https://github.com/nicomellaor/data-analysis-pandas" target="_blank" class="my-icons" title="Repository"><i class="bi bi-github"></i></a>
-                                    </div>
-                                </div>  
-                            </div>
+
+                    <img src="images/proyecto-1.png"
+                         class="w-full md:w-72 h-auto object-cover rounded-xl border border-accent/30">
+                </div>
+            </div>
+
+            <div class="project-card mt-6">
+                <div class="flex flex-col md:flex-row items-center gap-6">
+                    <div class="flex-1">
+                        <h3 class="font-medium text-lg">Dashboard de indicadores de movilidad</h3>
+                        <p class="text-muted mt-2">
+                            Página web para la visualización de indicadores de movilidad
+                            de estudiantes y académicos.
+                        </p>
+
+                        <div class="flex gap-2 mt-3">
+                            <span class="chip">React</span>
+                            <span class="chip">MUI</span>
+                            <span class="chip">Django</span>
+                            <span class="chip">PostgreSQL</span>
                         </div>
                     </div>
-                </article>
-            </section>
-            <section id="skills" class="container text-center">
-                <article>
-                    <h2>Skills</h2>
-                    <h3>Programming</h3>
-                    <ul class="row align-items-center justify-content-center">
-                        <li class="col-12 col-md">
-                            <img src = "images/python-5.svg" alt="Python"/>
-                            <h5>Python</h5>
-                        </li>
-                        <li class="col-12 col-md">
-                            <img src = "images/html-1.svg" alt="HTML5"/>
-                            <h5>HTML</h5>
-                        </li>
-                        <li class="col-12 col-md">
-                            <img src = "images/css-3.svg" alt="CSS3"/>
-                            <h5>CSS</h5>
-                        </li>
-                        <li class="col-12 col-md">
-                            <img src = "images/logo-javascript.svg" alt="JavaScript"/>
-                            <h5>JavaScript</h5>
-                        </li>
-                        <li class="col-12 col-md">
-                            <img src = "images/java-14.svg" alt="Java"/>
-                            <h5>Java</h5>
-                        </li>
-                    </ul>
-                    <h3>Frameworks & Libraries</h3>
-                    <ul class="row align-items-center justify-content-center">
-                        <li class="col-12 col-md">
-                            <img src = "images/react-2.svg" alt="React"/>
-                            <h5>React</h5>
-                        </li>
-                        <li class="col-12 col-md">
-                            <img src = "images/bootstrap-5-1.svg" alt="Bootstrap"/>
-                            <h5>Bootstrap</h5>
-                        </li>
-                        <li class="col-12 col-md">
-                            <img src = "images/laravel-2.svg" alt="Laravel"/>
-                            <h5>Laravel</h5>
-                        </li>
-                    </ul>
-                    <h3>DBMS</h3>
-                    <ul class="row align-items-center justify-content-center">
-                        <li class="col-12 col-md">
-                            <img src = "images/mysql-logo-pure.svg" alt="MySQL"/>
-                            <h5>MySQL</h5>
-                        </li>
-                        <li class="col-12 col-md">
-                            <img src = "images/mongodb-icon-1.svg" alt="MongoDB"/>
-                            <h5>MongoDB</h5>
-                        </li>
-                        <li class="col-12 col-md">
-                            <img src = "images/neo4j-original-wordmark.svg" alt="Neo4j"/>
-                            <h5>Neo4j</h5>
-                        </li>
-                    </ul>
-                </article>
-            </section>
-        </main>
-        <footer id="contact" class="container">
-            <article>
-                <h2 class="mb-2">Contact</h2>
-                <p class="mb-5">If you wish to contact me, you can do so through my social networks or by sending me an email.</p>
-                <ul class="row align-items-center justify-content-center text-center">
-                    <li class="col-md">
-                        <a href="https://github.com/nicomellaor" target="_blank" class="my-icons"><i class="bi bi-github"></i></a>
-                        <h5>GitHub</h5>
-                        <p>nicomellaor</p>
-                            
-                    </li>
-                    <li class="col-md">
-                        <a href="https://www.linkedin.com/in/nicolas-mella-ortiz/" target="_blank" class="my-icons"><i class="bi bi-linkedin"></i></a>
-                        <h5>LinkedIn</h5>
-                        <p>Nicolás Mella Ortiz</p>
-                    </li>
-                    <li class="col-md">
-                        <a href="mailto:nicolasmella2004@gmail.com" target="_blank" class="my-icons"><i class="bi bi-envelope-fill"></i></a>
-                        <h5>Gmail</h5>
-                        <p>nicolasmella2004@gmail.com</p>
-                    </li>
-                </ul>
-            </article>
-        </footer>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    </body>
+
+                    <img src="images/proyecto-2.png"
+                         class="w-full md:w-72 h-auto object-cover rounded-xl border border-accent/30">
+                </div>
+            </div>
+
+            <div class="project-card mt-6">
+                <div class="flex flex-col md:flex-row items-center gap-6">
+                    <div class="flex-1">
+                        <h3 class="font-medium text-lg">Plataforma de horarios académicos</h3>
+                        <p class="text-muted mt-2">
+                            Aplicación para consulta dinámica de horarios de asignaturas, ocupación de salas 
+                            y disponibilidad de docentes.
+                        </p>
+
+                        <div class="flex gap-2 mt-3">
+                            <span class="chip">React</span>
+                            <span class="chip">MUI</span>
+                            <span class="chip">FastAPI</span>
+                            <span class="chip">MongoDB</span>
+                        </div>
+                    </div>
+
+                    <img src="images/proyecto-3.png"
+                         class="w-full md:w-72 h-auto object-cover rounded-xl border border-accent/30">
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="text-center text-muted text-sm py-6">
+        © <script>document.write(new Date().getFullYear());</script> - Nicolás Mella
+    </footer>
+
+</body>
 </html>
