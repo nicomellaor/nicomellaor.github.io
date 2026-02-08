@@ -21,31 +21,33 @@
 <body class="bg-bg text-text font-inter">
 
     <!-- Contenedor principal -->
-    <main class="max-w-3xl mx-auto px-6 py-12">
+    <main class="max-w-3xl lg:max-w-5xl xl:max-w-6xl mx-auto px-6 py-12">
 
         <!-- Header -->
-        <section class="flex flex-col sm:flex-row items-center sm:items-start gap-6 mb-12">
+        <section class="flex flex-col sm:flex-row items-center justify-center text-center sm:text-left gap-6 sm:gap-8 mb-12">
             <img src="images/avatar.jpg" alt="Foto de perfil"
-                 class="w-36 h-36 rounded-full object-cover border-2 border-accent shadow-lg">
+             class="w-32 h-32 sm:w-40 sm:h-40 lg:w-48 lg:h-48 rounded-full object-cover shadow-lg ring-2 ring-accent/20">
 
-            <div>
-                <h1 class="text-3xl font-semibold">Nicolás Mella</h1>
-                <p class="text-muted mt-1">Ingeniero Civil Informático</p>
+            <div class="flex flex-col items-center sm:items-start">
+            <h1 class="text-3xl sm:text-4xl font-semibold">Nicolás Mella</h1>
+            <p class="text-muted mt-1 text-sm sm:text-base">Ingeniero Civil Informático</p>
 
-                <!-- Icon Buttons -->
-                <div class="flex gap-3 mt-4">
-                    <a href="mailto:nicolasmella2004@gmail.com" class="email-btn">
-                        <i class="bi bi-envelope-fill mr-2"></i> nicolasmella2004@gmail</a>
+            <!-- Icon Buttons -->
+            <div class="flex flex-col gap-3 mt-4">
+            <a href="mailto:nicolasmella2004@gmail.com" class="email-btn">
+            <i class="bi bi-envelope-fill mr-2"></i> nicolasmella2004@gmail.com</a>
 
-                    <a href="docs/CV.pdf" download target="_blank" 
-                        class="icon-btn"><i class="bi bi-file-earmark-text-fill"></i></a>
+            <div class="flex gap-3 justify-center sm:justify-start">
+            <a href="docs/CV.pdf" download target="_blank" 
+                class="icon-btn"><i class="bi bi-file-earmark-text-fill"></i></a>
 
-                    <a href="https://github.com/nicomellaor" target="_blank"
-                       class="icon-btn"><i class="bi bi-github"></i></a>
+            <a href="https://github.com/nicomellaor" target="_blank"
+               class="icon-btn"><i class="bi bi-github"></i></a>
 
-                    <a href="https://www.linkedin.com/in/nicolas-mella-ortiz/" target="_blank"
-                       class="icon-btn"><i class="bi bi-linkedin"></i></a>
-                </div>
+            <a href="https://www.linkedin.com/in/nicolas-mella-ortiz/" target="_blank"
+               class="icon-btn"><i class="bi bi-linkedin"></i></a>
+            </div>
+            </div>
             </div>
         </section>
 
@@ -67,114 +69,130 @@
         <section class="mb-12">
             <h2 class="section-title">Tecnologías</h2>
 
-            <div class="flex flex-wrap gap-2 mt-3">
+            <div class="flex flex-wrap gap-2.5 mt-4">
                 <span class="chip">Python</span>
                 <span class="chip">JavaScript</span>
                 <span class="chip">TypeScript</span>
                 <span class="chip">React</span>
                 <span class="chip">FastAPI</span>
                 <span class="chip">Django</span>
+                <span class="chip">Express.js</span>
             </div>
         </section>
 
         <hr class="divider mb-10">
 
         <!-- Experiencia -->
-        <!--
         <section class="mb-12">
             <h2 class="section-title">Experiencia</h2>
 
-            <div class="mt-4 space-y-6">
+            <div class="mt-6 space-y-8">
 
-                <div class="relative pl-10">
-                    <div class="icon-circle"><i class="bi bi-terminal"></i></div>
-                    <h3 class="font-medium">Empresa X</h3>
-                    <p class="text-muted text-sm">Práctica Profesional</p>
-                    <span class="tag-date">Dic. 2025 - Feb. 2026</span>
+                <div class="relative pl-12 before:absolute before:left-[15px] before:top-10 before:bottom-0 before:w-px before:bg-gradient-to-b before:from-accent/30 before:to-transparent">
+                    <div class="icon-circle"><i class="bi bi-code-slash"></i></div>
+                    <h3 class="font-medium text-lg">Pinturas Panoramica</h3>
+                    <p class="text-muted text-sm mt-0.5">Práctica Profesional</p>
+                    <span class="tag-date mt-2">Dic. 2025 - Feb. 2026</span>
+                    <p class="text-muted mt-3 text-sm leading-relaxed">
+                        Desarrollo de un sistema de gestión de producción en toda la planta, abarcando cada etapa del proceso productivo.
+                    </p>
                 </div>
 
-                <div class="relative pl-10">
-                    <div class="icon-circle"><i class="bi bi-cpu"></i></div>
-                    <h3 class="font-medium">Universidad Autónoma de Chile</h3>
-                    <p class="text-muted text-sm">Desarrollador Independiente</p>
-                    <span class="tag-date">Ag. 2025 - Nov. 2025</span>
+                <div class="relative pl-12">
+                    <div class="icon-circle"><i class="bi bi-braces"></i></div>
+                    <h3 class="font-medium text-lg">Universidad Autónoma de Chile</h3>
+                    <p class="text-muted text-sm mt-0.5">Desarrollador Independiente</p>
+                    <span class="tag-date mt-2">Ag. 2025 - Dic. 2025</span>
+                    <p class="text-muted mt-3 text-sm leading-relaxed">
+                        Desarrollo de aplicaciones web para la automatización de procesos académicos y administrativos.
+                    </p>
                 </div>
 
             </div>
         </section>
 
         <hr class="divider mb-10">
-        -->
 
         <!-- Proyectos -->
         <section class="mb-14">
-            <h2 class="section-title">Proyectos</h2>
+            <h2 class="section-title">Proyectos Principales</h2>
 
-            <!-- Card -->
-            <div class="project-card mt-6">
-                <div class="flex flex-col md:flex-row items-center gap-6">
-                    <div class="flex-1">
-                        <h3 class="font-medium text-lg">Proyecto de Asistencia SAAC-ZERO</h3>
-                        <p class="text-muted mt-2">
-                            Plataforma para automatizar el registro de asistencia de las tutorías y ayudantías SAAC 
-                            dentro de la Universidad Autónoma de Chile.
-                        </p>
-
-                        <div class="flex gap-2 mt-3">
-                            <span class="chip">React</span>
-                            <span class="chip">Tailwind</span>
-                            <span class="chip">FastAPI</span>
-                            <span class="chip">PostgreSQL</span>
-                        </div>
+            <div class="mt-6 grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <!-- Proyecto 1 -->
+                <article class="project-card group">
+                    <div class="aspect-video w-full mb-4 overflow-hidden rounded-lg bg-panel/50">
+                        <img src="images/proyecto-0.png"
+                             class="w-full h-full object-cover transition-transform duration-300"
+                             alt="Producción Pinturas Panoramica">
                     </div>
-
-                    <img src="images/proyecto-1.png"
-                         class="w-full md:w-72 h-auto object-cover rounded-xl border border-accent/30">
-                </div>
-            </div>
-
-            <div class="project-card mt-6">
-                <div class="flex flex-col md:flex-row items-center gap-6">
-                    <div class="flex-1">
-                        <h3 class="font-medium text-lg">Dashboard de indicadores de movilidad</h3>
-                        <p class="text-muted mt-2">
-                            Página web para la visualización de indicadores de movilidad
-                            de estudiantes y académicos.
-                        </p>
-
-                        <div class="flex gap-2 mt-3">
-                            <span class="chip">React</span>
-                            <span class="chip">MUI</span>
-                            <span class="chip">Django</span>
-                            <span class="chip">PostgreSQL</span>
-                        </div>
+                    <h3 class="font-semibold text-lg">Producción Pinturas Panoramica</h3>
+                    <p class="text-muted text-sm mt-2 leading-relaxed">
+                        Software para la gestión de la producción, control de bodega, logística y prevención de riesgos en la empresa Pinturas Panoramica.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mt-4">
+                        <span class="chip">React</span>
+                        <span class="chip">Tailwind</span>
+                        <span class="chip">Express.js</span>
+                        <span class="chip">PostgreSQL</span>
                     </div>
+                </article>
 
-                    <img src="images/proyecto-2.png"
-                         class="w-full md:w-72 h-auto object-cover rounded-xl border border-accent/30">
-                </div>
-            </div>
-
-            <div class="project-card mt-6">
-                <div class="flex flex-col md:flex-row items-center gap-6">
-                    <div class="flex-1">
-                        <h3 class="font-medium text-lg">Plataforma de horarios académicos</h3>
-                        <p class="text-muted mt-2">
-                            Aplicación para consulta dinámica de horarios de asignaturas, ocupación de salas 
-                            y disponibilidad de docentes.
-                        </p>
-
-                        <div class="flex gap-2 mt-3">
-                            <span class="chip">React</span>
-                            <span class="chip">MUI</span>
-                            <span class="chip">FastAPI</span>
-                            <span class="chip">MongoDB</span>
-                        </div>
+                <!-- Proyecto 2 -->
+                <article class="project-card group">
+                    <div class="aspect-video w-full mb-4 overflow-hidden rounded-lg bg-panel/50">
+                        <img src="images/proyecto-1.png"
+                             class="w-full h-full object-cover transition-transform duration-300"
+                             alt="Proyecto de Asistencia SAAC-ZERO">
                     </div>
+                    <h3 class="font-semibold text-lg">Proyecto de Asistencia SAAC-ZERO</h3>
+                    <p class="text-muted text-sm mt-2 leading-relaxed">
+                        Plataforma para automatizar el registro de asistencia de las tutorías y ayudantías SAAC dentro de la Universidad Autónoma de Chile.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mt-4">
+                        <span class="chip">React</span>
+                        <span class="chip">Tailwind</span>
+                        <span class="chip">FastAPI</span>
+                        <span class="chip">PostgreSQL</span>
+                    </div>
+                </article>
 
-                    <img src="images/proyecto-3.png"
-                         class="w-full md:w-72 h-auto object-cover rounded-xl border border-accent/30">
-                </div>
+                <!-- Proyecto 3 -->
+                <article class="project-card group">
+                    <div class="aspect-video w-full mb-4 overflow-hidden rounded-lg bg-panel/50">
+                        <img src="images/proyecto-2.png"
+                             class="w-full h-full object-cover transition-transform duration-300"
+                             alt="Dashboard de indicadores de movilidad">
+                    </div>
+                    <h3 class="font-semibold text-lg">Dashboard de indicadores de movilidad</h3>
+                    <p class="text-muted text-sm mt-2 leading-relaxed">
+                        Página web para la visualización de indicadores de movilidad de estudiantes y académicos.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mt-4">
+                        <span class="chip">React</span>
+                        <span class="chip">MUI</span>
+                        <span class="chip">Django</span>
+                        <span class="chip">PostgreSQL</span>
+                    </div>
+                </article>
+
+                <!-- Proyecto 4 -->
+                <article class="project-card group">
+                    <div class="aspect-video w-full mb-4 overflow-hidden rounded-lg bg-panel/50">
+                        <img src="images/proyecto-3.png"
+                             class="w-full h-full object-cover transition-transform duration-300"
+                             alt="Plataforma de horarios académicos">
+                    </div>
+                    <h3 class="font-semibold text-lg">Plataforma de horarios académicos</h3>
+                    <p class="text-muted text-sm mt-2 leading-relaxed">
+                        Aplicación para consulta dinámica de horarios de asignaturas, ocupación de salas y disponibilidad de docentes.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mt-4">
+                        <span class="chip">React</span>
+                        <span class="chip">MUI</span>
+                        <span class="chip">FastAPI</span>
+                        <span class="chip">MongoDB</span>
+                    </div>
+                </article>
             </div>
         </section>
 

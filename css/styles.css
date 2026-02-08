@@ -1,12 +1,13 @@
 :root {
-    --bg: #0e0f0e;
-    --panel: #141615;
-    --text: #e8eee9;
-    --muted: #9ba89a;
-    --accent: #3aa8ff;
-    --accent-dark: #1d6fb3;
-    --chip-bg: rgba(58,168,255,0.12);
+    --bg: #191715;
+    --panel: #23201c;
+    --text: #eceae6;
+    --muted: #b2ada4;
+    --accent: #f2a1a1;
+    --accent-dark: #e07a7a;
+    --chip-bg: rgba(242,161,161,0.20);
 }
+
 
 body {
     font-family: 'Inter', sans-serif;
@@ -105,6 +106,13 @@ body {
 .project-card {
     padding: 20px;
     background: var(--panel);
-    border-radius: 14px;
-    border: 1px solid rgba(255,255,255,0.04);
+    border-radius: 16px;
+    border: 1px solid rgba(255,255,255,0.06);
+    transition: all 0.3s ease;
+}
+
+.project-card:hover {
+    border-color: rgba(242,161,161,0.15);
+    box-shadow: 0 10px 30px -10px rgba(0,0,0,0.3);
+    transform: translateY(-2px);
 }
