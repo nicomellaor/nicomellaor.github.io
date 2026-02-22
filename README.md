@@ -1,18 +1,22 @@
-# Portafolio
+# Portfolio
 
-Página web de presentación personal. Incluye proyectos, habilidades y experiencia en el desarrollo de software. Diseñado para ser claro, minimalista y fácil de navegar, con el objetivo de mostrar mi progreso en mi carrera profesional.
+Personal portfolio website. Includes projects, skills, and experience in software development. Designed to be clear, minimalistic, and easy to navigate, with the goal of showcasing my progress in my professional career.
+
+## Tech Stack
+
+* HTML5
+* Tailwind CSS
+* Bootstrap Icons
+* JavaScript
+
+## Content
+
+* **Header:** Presentation and contact information
+* **About:** Resume of who I am and my interests
+* **Technologies:** List of technologies I have experience with
+* **Experience:** List of my work experience
+* **Projects:** List of featured projects with images and descriptions
 
 ## URL
-- https://nicomellaor.github.io/
 
-## Tecnologías utilizadas
-- HTML5
-- Tailwind CSS
-- Bootstrap Icons
-- JavaScript
-
-## Contenido
-- **Inicio:** Presentación e información de contacto
-- **Sobre mí:** Resumen de quién soy y mis intereses
-- **Proyectos:** Lista de proyectos destacados con imágenes y descripciones
-- **Contacto:** Enlace a correo, currículum vitae, GitHub y LinkedIn
+https://nicomellaor.github.io/
