@@ -22,7 +22,12 @@
 
     /* Icon Buttons */
     .icon-btn {
-        @apply inline-flex size-10 items-center justify-center rounded-full border border-accent-dark bg-white/5 text-accent text-lg transition-all duration-200 hover:bg-accent-dark hover:text-white hover:-translate-y-1 hover:shadow-lg hover:shadow-accent/20;
+        @apply inline-flex size-10 items-center justify-center rounded-full border border-accent-dark bg-white/5 text-accent text-lg transition-all duration-200 hover:bg-accent-dark hover:text-slate-900 hover:-translate-y-1 hover:shadow-lg hover:shadow-black/20;
+    }
+
+    /* Botones de descarga de CV */
+    .cv-btn {
+        @apply inline-flex items-center gap-2 px-4 py-2 rounded-full border border-accent-dark bg-white/5 text-accent text-xs sm:text-sm font-medium transition-all duration-200 hover:bg-accent-dark hover:text-slate-900 hover:-translate-y-1 hover:shadow-lg hover:shadow-black/20;
     }
 
     /* Iconos de experiencia */
@@ -32,12 +37,12 @@
 
     /* Botón grande de email */
     .email-btn {
-        @apply inline-flex items-center px-4 py-2 rounded-full border border-accent-dark bg-white/5 text-accent text-sm transition-all duration-200 hover:bg-accent-dark hover:text-white hover:-translate-y-1 hover:shadow-lg hover:shadow-accent/20;
+        @apply inline-flex items-center px-4 py-2 rounded-full border border-accent-dark bg-white/5 text-accent text-sm transition-all duration-200 hover:bg-accent-dark hover:text-slate-900 hover:-translate-y-1 hover:shadow-lg hover:shadow-black/20;
     }
 
     /* Fecha lateral */
     .tag-date {
-        @apply inline-block mt-1 bg-accent text-[#0d0f0e] px-2 py-0.5 rounded-full text-xs font-medium;
+        @apply inline-block mt-1 bg-accent text-slate-900 px-2 py-0.5 rounded-full text-xs font-medium;
     }
 
     /* Card de proyectos */

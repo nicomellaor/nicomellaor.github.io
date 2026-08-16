@@ -7,14 +7,14 @@ module.exports = {
         inter: ['Inter', 'sans-serif'],
       },
       colors: {
-        bg: '#191715',
-        panel: '#23201c',
-        text: '#eceae6',
-        muted: '#b2ada4',
+        bg: '#111827',
+        panel: '#1f2937',
+        text: '#f9fafb',
+        muted: '#cbd5e1',
         accent: {
-          DEFAULT: '#f2a1a1',
-          dark: '#e07a7a',
-          bg: 'rgba(242,161,161,0.20)'
+          DEFAULT: '#f3f4f6',
+          dark: '#d1d5db',
+          bg: 'rgba(255,255,255,0.12)'
         }
       }
     }
