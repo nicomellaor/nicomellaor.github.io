@@ -1,6 +1,7 @@
 @config "../tailwind.config.js";
 @import "tailwindcss";
 @source "../index.html";
+@source "../en/index.html";
 
 @layer base {
     body {
@@ -9,6 +10,19 @@
 }
 
 @layer components {
+
+    /* Selector de idioma */
+    .language-switch {
+        @apply inline-flex items-center p-1 rounded-full border border-white/10 bg-panel;
+    }
+
+    .language-option {
+        @apply px-3 py-1 rounded-full text-xs font-medium text-muted transition-colors duration-200 hover:text-text focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent;
+    }
+
+    .language-option-active {
+        @apply bg-accent text-slate-900 hover:text-slate-900;
+    }
 
     /* Títulos */
     .section-title {
